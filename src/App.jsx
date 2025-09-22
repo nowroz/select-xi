@@ -8,8 +8,14 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 
 import Navbar from "./components/navbar/Navbar";
 import ToggleBar from "./components/toggleBar/ToggleBar";
+import AvailablePlayers from "./components/availablePlayers/AvailablePlayers";
+import { Suspense } from "react";
 
 library.add(fas, far, fab);
+
+const playersPromise = fetch("./players.json").then((response) =>
+  response.json(),
+);
 
 function App() {
   return (
@@ -19,6 +25,9 @@ function App() {
       </header>
       <main>
         <ToggleBar></ToggleBar>
+        <Suspense>
+          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+        </Suspense>
       </main>
     </>
   );
