@@ -9,7 +9,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./components/navbar/Navbar";
 import ToggleBar from "./components/toggleBar/ToggleBar";
 import AvailablePlayers from "./components/availablePlayers/AvailablePlayers";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 library.add(fas, far, fab);
 
@@ -18,13 +18,19 @@ const playersPromise = fetch("./players.json").then((response) =>
 );
 
 function App() {
+  const [isAvailablePlayersToggled, setIsAvailablePlayersToggled] =
+    useState(true);
+
   return (
     <>
       <header>
         <Navbar></Navbar>
       </header>
       <main>
-        <ToggleBar></ToggleBar>
+        <ToggleBar
+          isAvailablePlayersToggled={isAvailablePlayersToggled}
+          setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
+        ></ToggleBar>
         <Suspense>
           <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
         </Suspense>
