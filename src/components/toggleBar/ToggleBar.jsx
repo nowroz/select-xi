@@ -4,7 +4,7 @@ const ToggleBar = () => {
   const [isAvailableToggled, setIsAvailableToggled] = useState(true);
 
   return (
-    <div className="container mx-auto my-10 px-4 flex justify-between items-center">
+    <section className="container mx-auto my-10 px-4 flex justify-between items-center">
       <h3 className="text-2xl font-bold text-[#131313]">
         {isAvailableToggled ? "Available Players" : "Selected Players"}
       </h3>
@@ -22,7 +22,7 @@ const ToggleBar = () => {
           Selected (<span>0</span>)
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

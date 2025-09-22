@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto px-4 py-10 flex justify-between items-center">
+    <nav className="container mx-auto px-4 py-10 flex justify-between items-center">
       <div className="sm:hidden dropdown dropdown-start">
         <div tabIndex={0} role="button" className="btn m-1">
           <FontAwesomeIcon icon="fa-solid fa-bars" />
@@ -59,7 +59,7 @@ const Navbar = () => {
           <img className="w-6" src={coinIcon} alt="" />
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 
