@@ -5,7 +5,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+
 import Navbar from "./components/navbar/Navbar";
+import ToggleBar from "./components/toggleBar/ToggleBar";
 
 library.add(fas, far, fab);
 
@@ -15,6 +17,9 @@ function App() {
       <header>
         <Navbar></Navbar>
       </header>
+      <main>
+        <ToggleBar></ToggleBar>
+      </main>
     </>
   );
 }
