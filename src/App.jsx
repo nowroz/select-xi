@@ -31,9 +31,13 @@ function App() {
           isAvailablePlayersToggled={isAvailablePlayersToggled}
           setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
         ></ToggleBar>
-        <Suspense>
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
-        </Suspense>
+        {isAvailablePlayersToggled && (
+          <Suspense>
+            <AvailablePlayers
+              playersPromise={playersPromise}
+            ></AvailablePlayers>
+          </Suspense>
+        )}
       </main>
     </>
   );
