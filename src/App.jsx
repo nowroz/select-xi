@@ -10,6 +10,7 @@ import Navbar from "./components/navbar/Navbar";
 import ToggleBar from "./components/toggleBar/ToggleBar";
 import AvailablePlayers from "./components/availablePlayers/AvailablePlayers";
 import { Suspense, useState } from "react";
+import Loading from "./components/loading/Loading";
 
 library.add(fas, far, fab);
 
@@ -32,7 +33,7 @@ function App() {
           setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
         ></ToggleBar>
         {isAvailablePlayersToggled && (
-          <Suspense>
+          <Suspense fallback={<Loading></Loading>}>
             <AvailablePlayers
               playersPromise={playersPromise}
             ></AvailablePlayers>
