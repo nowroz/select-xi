@@ -1,180 +1,224 @@
 {
   "players": [
     {
+      "uuid": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
       "name": "Shakib Al Hasan",
       "role": "All-Rounder",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Slow left-arm orthodox",
       "estimatedNetWorthUSD": 20000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 9.2
     },
     {
+      "uuid": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
       "name": "Mushfiqur Rahim",
       "role": "Wicketkeeper-Batter",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 18000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 8.7
     },
     {
+      "uuid": "c3d4e5f6-a7b8-c9d0-e1f2-3a4b5c6d7e8f",
       "name": "Litton Das",
       "role": "Wicketkeeper-Batter",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 15000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 8.5
     },
     {
+      "uuid": "d4e5f6a7-b8c9-d0e1-f2a3-b4c5d6e7f8a9",
       "name": "Tamim Iqbal",
       "role": "Batter",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 19000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 9.1
     },
     {
+      "uuid": "e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0",
       "name": "Najmul Hossain Shanto",
       "role": "Batter",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 7000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.8
     },
     {
+      "uuid": "f6a7b8c9-d0e1-f2a3-b4c5-d6e7f8a9b0c1",
       "name": "Towhid Hridoy",
       "role": "Batter",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 5000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.5
     },
     {
+      "uuid": "a7b8c9d0-e1f2-a3b4-c5d6-e7f8a9b0c1d2",
       "name": "Mehidy Hasan Miraz",
       "role": "All-Rounder",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 8000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 8.4
     },
     {
+      "uuid": "b8c9d0e1-f2a3-b4c5-d6e7-f8a9b0c1d2e3",
       "name": "Mustafizur Rahman",
       "role": "Bowler",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Left-arm fast-medium",
       "estimatedNetWorthUSD": 10000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 8.9
     },
     {
+      "uuid": "c9d0e1f2-a3b4-c5d6-e7f8-a9b0c1d2e3f4",
       "name": "Taskin Ahmed",
       "role": "Bowler",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Right-arm fast",
       "estimatedNetWorthUSD": 9000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 8.6
     },
     {
+      "uuid": "d0e1f2a3-b4c5-d6e7-f8a9-b0c1d2e3f4a5",
       "name": "Shoriful Islam",
       "role": "Bowler",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Left-arm fast-medium",
       "estimatedNetWorthUSD": 4000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.9
     },
     {
+      "uuid": "e1f2a3b4-c5d6-e7f8-a9b0-c1d2e3f4a5b6",
       "name": "Tanzim Hasan Sakib",
       "role": "Bowler",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm fast-medium",
       "estimatedNetWorthUSD": 3000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.6
     },
     {
+      "uuid": "f2a3b4c5-d6e7-f8a9-b0c1-d2e3f4a5b6c7",
       "name": "Rishad Hossain",
       "role": "Bowler",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm legbreak",
       "estimatedNetWorthUSD": 2000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.8
     },
     {
+      "uuid": "a3b4c5d6-e7f8-a9b0-c1d2-e3f4a5b6c7d8",
       "name": "Jaker Ali",
       "role": "Wicketkeeper-Batter",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 1500000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.5
     },
     {
+      "uuid": "b4c5d6e7-f8a9-b0c1-d2e3-f4a5b6c7d8e9",
       "name": "Mohammad Saifuddin",
       "role": "All-Rounder",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm fast-medium",
       "estimatedNetWorthUSD": 2500000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.2
     },
     {
+      "uuid": "c5d6e7f8-a9b0-c1d2-e3f4-a5b6c7d8e9f0",
       "name": "Taijul Islam",
       "role": "Bowler",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Left-arm orthodox",
       "estimatedNetWorthUSD": 3500000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.4
     },
     {
+      "uuid": "d6e7f8a9-b0c1-d2e3-f4a5-b6c7d8e9f0a1",
       "name": "Mahedi Hasan",
       "role": "All-Rounder",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 4500000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.7
     },
     {
+      "uuid": "e7f8a9b0-c1d2-e3f4-a5b6-c7d8e9f0a1b2",
       "name": "Nasum Ahmed",
       "role": "Bowler",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Left-arm orthodox",
       "estimatedNetWorthUSD": 2800000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.9
     },
     {
+      "uuid": "f8a9b0c1-d2e3-f4a5-b6c7-d8e9f0a1b2c3",
       "name": "Tanzid Hasan",
       "role": "Batter",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 1200000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.2
     },
     {
+      "uuid": "a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4",
       "name": "Parvez Hossain Emon",
       "role": "Batter",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 900000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 5.5
     },
     {
+      "uuid": "b0c1d2e3-f4a5-b6c7-d8e9-f0a1b2c3d4e5",
       "name": "Shamim Hossain",
       "role": "Batter",
       "battingStyle": "Left-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 1100000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.1
     },
     {
+      "uuid": "c1d2e3f4-a5b6-c7d8-e9f0-a1b2c3d4e5f6",
       "name": "Saif Hassan",
       "role": "All-Rounder",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "Right-arm offbreak",
       "estimatedNetWorthUSD": 1300000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 6.4
     },
     {
+      "uuid": "d2e3f4a5-b6c7-d8e9-f0a1-b2c3d4e5f6a7",
       "name": "Nurul Hasan",
       "role": "Wicketkeeper",
       "battingStyle": "Right-hand bat",
       "bowlingStyle": "N/A",
       "estimatedNetWorthUSD": 3000000,
-      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg"
+      "image": "https://i.ibb.co.com/k2gVwrVy/tamim-iqbaljpg.jpg",
+      "rating": 7.3
     }
   ]
 }
