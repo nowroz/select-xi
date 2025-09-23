@@ -52,6 +52,7 @@ function App() {
         )}
         {isAvailablePlayersToggled || (
           <SelectedPlayers
+            setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
             availableCoins={availableCoins}
