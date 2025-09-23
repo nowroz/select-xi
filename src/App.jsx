@@ -34,6 +34,7 @@ function App() {
         <ToggleBar
           isAvailablePlayersToggled={isAvailablePlayersToggled}
           setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
+          selectedPlayersUUID={selectedPlayersUUID}
         ></ToggleBar>
         {isAvailablePlayersToggled && (
           <Suspense fallback={<Loading></Loading>}>
