@@ -21,6 +21,9 @@ const playersPromise = fetch("./players.json").then((response) =>
 function App() {
   const [isAvailablePlayersToggled, setIsAvailablePlayersToggled] =
     useState(true);
+  const [selectedPlayersUUID, setSelectedPlayersUUID] = useState([]);
+
+  console.log(selectedPlayersUUID);
 
   return (
     <>
@@ -36,6 +39,8 @@ function App() {
           <Suspense fallback={<Loading></Loading>}>
             <AvailablePlayers
               playersPromise={playersPromise}
+              selectedPlayersUUID={selectedPlayersUUID}
+              setSelectedPlayersUUID={setSelectedPlayersUUID}
             ></AvailablePlayers>
           </Suspense>
         )}

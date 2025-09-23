@@ -1,7 +1,11 @@
 import { use } from "react";
 import PlayerCard from "../playerCard/PlayerCard";
 
-const AvailablePlayers = ({ playersPromise }) => {
+const AvailablePlayers = ({
+  playersPromise,
+  selectedPlayersUUID,
+  setSelectedPlayersUUID,
+}) => {
   const result = use(playersPromise);
   const availablePlayers = result.players;
 
@@ -9,7 +13,12 @@ const AvailablePlayers = ({ playersPromise }) => {
     <section className="container mx-auto my-10 px-4">
       <div className="grid grid-cols-3 gap-6 p-4">
         {availablePlayers.map((player) => (
-          <PlayerCard key={player.uuid} player={player}></PlayerCard>
+          <PlayerCard
+            key={player.uuid}
+            player={player}
+            selectedPlayersUUID={selectedPlayersUUID}
+            setSelectedPlayersUUID={setSelectedPlayersUUID}
+          ></PlayerCard>
         ))}
       </div>
     </section>
