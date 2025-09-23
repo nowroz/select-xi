@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { toast } from "react-toastify";
 
 const SelectedPlayerCard = ({
   player: { uuid, name, image, battingStyle, estimatedNetWorthUSD },
@@ -7,13 +8,14 @@ const SelectedPlayerCard = ({
   availableCoins,
   setAvailableCoins,
 }) => {
-  const handleRemoveSelectedPlayer = (uuid) => {
+  const handleRemoveSelectedPlayer = (uuid, name) => {
     setAvailableCoins(availableCoins + estimatedNetWorthUSD);
     const filterdSelectedPlayers = selectedPlayers.filter(
       (selectedPlayer) => selectedPlayer.uuid !== uuid,
     );
 
     setSelectedPlayers(filterdSelectedPlayers);
+    toast.info(`Removed ${name}`);
   };
 
   return (
@@ -32,7 +34,7 @@ const SelectedPlayerCard = ({
         </div>
       </div>
       <button
-        onClick={() => handleRemoveSelectedPlayer(uuid)}
+        onClick={() => handleRemoveSelectedPlayer(uuid, name)}
         className="text-base text-red-600 cursor-pointer active:scale-95"
       >
         <FontAwesomeIcon icon="fa-solid fa-trash-can" />
