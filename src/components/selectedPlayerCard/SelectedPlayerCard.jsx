@@ -20,14 +20,16 @@ const SelectedPlayerCard = ({
 
   return (
     <div className="flex justify-between items-center border border-[#1313131a] rounded-2xl p-6">
-      <div className="flex gap-4 items-center">
+      <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
         <img
           className="max-w-20 h-auto object-cover rounded-2xl"
           src={image}
           alt=""
         />
         <div>
-          <h4 className="text-xl font-semibold text-[#131313]">{name}</h4>
+          <h4 className="text-lg sm:text-xl font-semibold text-[#131313]">
+            {name}
+          </h4>
           <h5 className="text-sm font-normal text-[#13131399]">
             {battingStyle}
           </h5>
