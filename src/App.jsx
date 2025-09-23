@@ -1,5 +1,6 @@
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { ToastContainer } from "react-toastify";
 
 /* import all the icons in Free Solid, Free Regular, and Brands styles */
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -58,6 +59,7 @@ function App() {
           ></SelectedPlayers>
         )}
       </main>
+      <ToastContainer></ToastContainer>
     </>
   );
 }
