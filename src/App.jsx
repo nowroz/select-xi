@@ -59,7 +59,7 @@ function App() {
           ></SelectedPlayers>
         )}
       </main>
-      <ToastContainer></ToastContainer>
+      <ToastContainer newestOnTop></ToastContainer>
     </>
   );
 }

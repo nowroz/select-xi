@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { toast } from "react-toastify";
 
 const PlayerCard = ({
   player,
@@ -18,6 +19,13 @@ const PlayerCard = ({
   } = player;
 
   const handleChoosePlayer = (player) => {
+    const playerNetWorth = player.estimatedNetWorthUSD;
+
+    if (playerNetWorth > availableCoins) {
+      toast.error("Not enough coins!");
+      return;
+    }
+
     setAvailableCoins(availableCoins - player.estimatedNetWorthUSD);
     setSelectedPlayers([...selectedPlayers, player]);
   };
