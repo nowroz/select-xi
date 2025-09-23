@@ -46,7 +46,9 @@ function App() {
             ></AvailablePlayers>
           </Suspense>
         )}
-        {isAvailablePlayersToggled || <SelectedPlayers></SelectedPlayers>}
+        {isAvailablePlayersToggled || (
+          <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        )}
       </main>
     </>
   );
