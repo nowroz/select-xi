@@ -28,6 +28,7 @@ const PlayerCard = ({
 
     setAvailableCoins(availableCoins - player.estimatedNetWorthUSD);
     setSelectedPlayers([...selectedPlayers, player]);
+    toast.success(`Selected ${player.name}`);
   };
 
   return (
