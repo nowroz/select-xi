@@ -21,6 +21,11 @@ const PlayerCard = ({
   const handleChoosePlayer = (player) => {
     const playerNetWorth = player.estimatedNetWorthUSD;
 
+    if (selectedPlayers.length == 6) {
+      toast.error("Already selected 6 players");
+      return;
+    }
+
     if (playerNetWorth > availableCoins) {
       toast.error("Not enough coins!");
       return;
