@@ -1,6 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SelectedPlayerCard = ({ player: { name, image, battingStyle } }) => {
+const SelectedPlayerCard = ({
+  player: { uuid, name, image, battingStyle },
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
+  const handleRemoveSelectedPlayer = (uuid) => {
+    const filterdSelectedPlayers = selectedPlayers.filter(
+      (selectedPlayer) => selectedPlayer.uuid !== uuid,
+    );
+
+    setSelectedPlayers(filterdSelectedPlayers);
+  };
+
   return (
     <div className="flex justify-between items-center border border-[#1313131a] rounded-2xl p-6">
       <div className="flex gap-4 items-center">
@@ -16,7 +28,10 @@ const SelectedPlayerCard = ({ player: { name, image, battingStyle } }) => {
           </h5>
         </div>
       </div>
-      <button className="text-base text-red-600 cursor-pointer active:scale-95">
+      <button
+        onClick={() => handleRemoveSelectedPlayer(uuid)}
+        className="text-base text-red-600 cursor-pointer active:scale-95"
+      >
         <FontAwesomeIcon icon="fa-solid fa-trash-can" />
       </button>
     </div>
