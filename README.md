@@ -1,4 +1,4 @@
 ## Live Links
 
-[Netlify](https://select-six-nowroz.netlify.app)
-[Surge](https://select-six-nowroz.surge.sh)
+[Netlify](https://select-xi-nowroz.netlify.app)
+[Surge](https://select-xi-nowroz.surge.sh)
