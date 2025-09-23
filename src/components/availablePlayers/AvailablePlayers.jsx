@@ -13,7 +13,7 @@ const AvailablePlayers = ({
 
   return (
     <section className="container mx-auto my-10 px-4">
-      <div className="grid grid-cols-3 gap-6 p-4">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 p-4">
         {availablePlayers.map((player) => (
           <PlayerCard
             key={player.uuid}

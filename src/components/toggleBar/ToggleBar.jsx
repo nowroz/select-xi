@@ -4,13 +4,13 @@ const ToggleBar = ({
   selectedPlayersUUID,
 }) => {
   return (
-    <section className="container mx-auto my-10 px-4 flex justify-between items-center">
+    <section className="container mx-auto my-10 px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
       <h3 className="text-2xl font-bold text-[#131313]">
         {isAvailablePlayersToggled
           ? "Available Players"
           : `Selected Players (${selectedPlayersUUID.length}/6)`}
       </h3>
-      <div>
+      <div className="flex">
         <button
           onClick={() => setIsAvailablePlayersToggled(true)}
           className={`border border-[#1313131a] border-r-0 rounded-l-xl px-8 py-2 text-base ${isAvailablePlayersToggled ? "font-bold text-[#131313] bg-[#E7FE29] shadow-md" : "font-normal text-[#13131399] "} cursor-pointer active:scale-95 active:translate-y-0.5 `}
