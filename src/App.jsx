@@ -20,6 +20,7 @@ const playersPromise = fetch("./players.json").then((response) =>
 );
 
 function App() {
+  const [availableCoins, setAvailableCoins] = useState(60000000);
   const [isAvailablePlayersToggled, setIsAvailablePlayersToggled] =
     useState(true);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
@@ -29,7 +30,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar></Navbar>
+        <Navbar availableCoins={availableCoins}></Navbar>
       </header>
       <main>
         <ToggleBar
@@ -43,6 +44,8 @@ function App() {
               playersPromise={playersPromise}
               selectedPlayers={selectedPlayers}
               setSelectedPlayers={setSelectedPlayers}
+              availableCoins={availableCoins}
+              setAvailableCoins={setAvailableCoins}
             ></AvailablePlayers>
           </Suspense>
         )}
@@ -50,6 +53,8 @@ function App() {
           <SelectedPlayers
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
+            availableCoins={availableCoins}
+            setAvailableCoins={setAvailableCoins}
           ></SelectedPlayers>
         )}
       </main>

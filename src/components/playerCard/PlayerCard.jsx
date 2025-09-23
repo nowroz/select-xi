@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const PlayerCard = ({ player, selectedPlayers, setSelectedPlayers }) => {
+const PlayerCard = ({
+  player,
+  selectedPlayers,
+  setSelectedPlayers,
+  availableCoins,
+  setAvailableCoins,
+}) => {
   const {
     name,
     role,
@@ -10,6 +16,11 @@ const PlayerCard = ({ player, selectedPlayers, setSelectedPlayers }) => {
     image,
     rating,
   } = player;
+
+  const handleChoosePlayer = (player) => {
+    setAvailableCoins(availableCoins - player.estimatedNetWorthUSD);
+    setSelectedPlayers([...selectedPlayers, player]);
+  };
 
   return (
     <div className="border border-[#1313131a] rounded-2xl p-4">
@@ -48,7 +59,7 @@ const PlayerCard = ({ player, selectedPlayers, setSelectedPlayers }) => {
           Price: ${estimatedNetWorthUSD}
         </h5>
         <button
-          onClick={() => setSelectedPlayers([...selectedPlayers, player])}
+          onClick={() => handleChoosePlayer(player)}
           disabled={selectedPlayers.includes(player)}
           className="text-sm font-normal text-[#131313] px-4 py-2 border border-[#1313131a] rounded-lg cursor-pointer shadow-sm active:shadow-none active:scale-95 disabled:cursor-default disabled:scale-100 disabled:text-gray-400 disabled:border-gray-300 disabled:shadow-none"
         >

@@ -5,6 +5,8 @@ const AvailablePlayers = ({
   playersPromise,
   selectedPlayers,
   setSelectedPlayers,
+  availableCoins,
+  setAvailableCoins,
 }) => {
   const result = use(playersPromise);
   const availablePlayers = result.players;
@@ -18,6 +20,8 @@ const AvailablePlayers = ({
             player={player}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
+            availableCoins={availableCoins}
+            setAvailableCoins={setAvailableCoins}
           ></PlayerCard>
         ))}
       </div>

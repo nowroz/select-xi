@@ -1,11 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SelectedPlayerCard = ({
-  player: { uuid, name, image, battingStyle },
+  player: { uuid, name, image, battingStyle, estimatedNetWorthUSD },
   selectedPlayers,
   setSelectedPlayers,
+  availableCoins,
+  setAvailableCoins,
 }) => {
   const handleRemoveSelectedPlayer = (uuid) => {
+    setAvailableCoins(availableCoins + estimatedNetWorthUSD);
     const filterdSelectedPlayers = selectedPlayers.filter(
       (selectedPlayer) => selectedPlayer.uuid !== uuid,
     );

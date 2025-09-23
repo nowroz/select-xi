@@ -1,6 +1,11 @@
 import SelectedPlayerCard from "../selectedPlayerCard/SelectedPlayerCard";
 
-const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
+const SelectedPlayers = ({
+  selectedPlayers,
+  setSelectedPlayers,
+  availableCoins,
+  setAvailableCoins,
+}) => {
   return (
     <section className="container mx-auto my-10 px-4">
       <div className="px-4 flex flex-col gap-4">
@@ -10,6 +15,8 @@ const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
             player={player}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
+            availableCoins={availableCoins}
+            setAvailableCoins={setAvailableCoins}
           ></SelectedPlayerCard>
         ))}
       </div>
