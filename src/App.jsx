@@ -11,6 +11,7 @@ import ToggleBar from "./components/toggleBar/ToggleBar";
 import AvailablePlayers from "./components/availablePlayers/AvailablePlayers";
 import { Suspense, useState } from "react";
 import Loading from "./components/loading/Loading";
+import SelectedPlayers from "./components/selectedPlayers/SelectedPlayers";
 
 library.add(fas, far, fab);
 
@@ -21,9 +22,9 @@ const playersPromise = fetch("./players.json").then((response) =>
 function App() {
   const [isAvailablePlayersToggled, setIsAvailablePlayersToggled] =
     useState(true);
-  const [selectedPlayersUUID, setSelectedPlayersUUID] = useState([]);
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
 
-  console.log(selectedPlayersUUID);
+  console.log(selectedPlayers);
 
   return (
     <>
@@ -34,17 +35,18 @@ function App() {
         <ToggleBar
           isAvailablePlayersToggled={isAvailablePlayersToggled}
           setIsAvailablePlayersToggled={setIsAvailablePlayersToggled}
-          selectedPlayersUUID={selectedPlayersUUID}
+          selectedPlayersUUID={selectedPlayers}
         ></ToggleBar>
         {isAvailablePlayersToggled && (
           <Suspense fallback={<Loading></Loading>}>
             <AvailablePlayers
               playersPromise={playersPromise}
-              selectedPlayersUUID={selectedPlayersUUID}
-              setSelectedPlayersUUID={setSelectedPlayersUUID}
+              selectedPlayers={selectedPlayers}
+              setSelectedPlayers={setSelectedPlayers}
             ></AvailablePlayers>
           </Suspense>
         )}
+        {isAvailablePlayersToggled || <SelectedPlayers></SelectedPlayers>}
       </main>
     </>
   );

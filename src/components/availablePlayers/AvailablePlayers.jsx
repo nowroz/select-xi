@@ -3,8 +3,8 @@ import PlayerCard from "../playerCard/PlayerCard";
 
 const AvailablePlayers = ({
   playersPromise,
-  selectedPlayersUUID,
-  setSelectedPlayersUUID,
+  selectedPlayers,
+  setSelectedPlayers,
 }) => {
   const result = use(playersPromise);
   const availablePlayers = result.players;
@@ -16,8 +16,8 @@ const AvailablePlayers = ({
           <PlayerCard
             key={player.uuid}
             player={player}
-            selectedPlayersUUID={selectedPlayersUUID}
-            setSelectedPlayersUUID={setSelectedPlayersUUID}
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
           ></PlayerCard>
         ))}
       </div>

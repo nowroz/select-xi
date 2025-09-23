@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const PlayerCard = ({
-  player: {
-    uuid,
+const PlayerCard = ({ player, selectedPlayers, setSelectedPlayers }) => {
+  const {
     name,
     role,
     battingStyle,
@@ -10,10 +9,8 @@ const PlayerCard = ({
     estimatedNetWorthUSD,
     image,
     rating,
-  },
-  selectedPlayersUUID,
-  setSelectedPlayersUUID,
-}) => {
+  } = player;
+
   return (
     <div className="border border-[#1313131a] rounded-2xl p-4">
       <img className="w-full object-cover rounded-xl mb-6" src={image} alt="" />
@@ -51,11 +48,11 @@ const PlayerCard = ({
           Price: ${estimatedNetWorthUSD}
         </h5>
         <button
-          onClick={() => setSelectedPlayersUUID([...selectedPlayersUUID, uuid])}
-          disabled={selectedPlayersUUID.includes(uuid)}
+          onClick={() => setSelectedPlayers([...selectedPlayers, player])}
+          disabled={selectedPlayers.includes(player)}
           className="text-sm font-normal text-[#131313] px-4 py-2 border border-[#1313131a] rounded-lg cursor-pointer shadow-sm active:shadow-none active:scale-95 disabled:cursor-default disabled:scale-100 disabled:text-gray-400 disabled:border-gray-300 disabled:shadow-none"
         >
-          {selectedPlayersUUID.includes(uuid) ? "Selected" : "Choose Player"}
+          {selectedPlayers.includes(player) ? "Selected" : "Choose Player"}
         </button>
       </div>
     </div>
